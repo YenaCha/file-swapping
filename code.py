@@ -1,0 +1,10 @@
+def swapfiles():
+    a = open('file1.txt', 'r')
+    dataa = a.read()
+    b = open('file2.txt', 'r')
+    datab = b.read()
+    a2 = open('file1.txt', 'w')
+    b2 = open('file2.txt', 'w')
+    a2.write(datab)
+    b2.write(dataa)
+swapfiles()
